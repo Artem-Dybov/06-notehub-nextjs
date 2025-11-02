@@ -1,5 +1,4 @@
-import css from "./Home.module.css"
-
+import css from './Home.module.css';
 
 const Home = () => {
   return (
@@ -19,10 +18,7 @@ const Home = () => {
         </p>
       </div>
     </main>
-
-  )
+  );
 };
 
 export default Home;
-
-
