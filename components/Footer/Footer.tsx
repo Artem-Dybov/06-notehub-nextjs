@@ -1,24 +1,19 @@
-import css from './Header.module.css';
-import Link from 'next/link';
-
-const Header = () => {
+import css from './Footer.module.css';
+const Footer = () => {
   return (
-    <header className={css.header}>
-      <Link href="/" aria-label="Home">
-        NoteHub
-      </Link>
-      <nav aria-label="Main Navigation">
-        <ul className={css.navigation}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/notes">Notes</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <footer className={css.footer}>
+      <div className={css.content}>
+        <p>© {new Date().getFullYear()} NoteHub. All rights reserved.</p>
+        <div className={css.wrap}>
+          <p>Developer: your name</p>
+          <p>
+            Contact us:
+            <a href="mailto:student@notehub.app">student@notehub.app</a>
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;
