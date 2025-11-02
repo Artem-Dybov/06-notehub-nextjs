@@ -17,7 +17,7 @@ export default function NoteList({ notes }: NoteListProps) {
     mutationFn: deleteNote,
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['notes'] }),
   });
-
+// ___
   return (
     <ul className={css.list}>
       {notes.map(note => (
